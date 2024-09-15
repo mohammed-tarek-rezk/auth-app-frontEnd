@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+@layer components{
+  .custom-container{
+    @apply container px-5 m-auto lg:max-w-screen-lg
+  }
+  .btn{
+    @apply  px-4 py-2 rounded-lg text-white
+  }
+  .form-body{
+    @apply w-screen h-screen flex justify-center items-center;
+  }
+  .form-container{
+    @apply outline-2 text-white outline-offset-2 outline  outline-second p-7 bg-main rounded-xl shadow-md w-full md:max-w-screen-sm;
+  }
+  .form-header{
+    @apply text-center font-bold text-2xl mb-6 text-second border-b-2 border-gray-700 pb-3
+  }
+  .form{
+    @apply flex flex-col gap-4 border-b-2 border-gray-700 pb-6 my-2
+  }
+}
